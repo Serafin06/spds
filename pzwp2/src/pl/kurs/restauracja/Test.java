@@ -16,7 +16,7 @@ public class Test {
         k.skladniki.add(ryz);
 
         k.przygotuj(zupa);
-        Podawacz ke = new ZupaNaWynos();
+        Podawacz ke = new Kelner();
         if (ke instanceof Adresowalny)
             ((Adresowalny) ke).setAdres("Katowic");
         ke.podaj(zupa);
