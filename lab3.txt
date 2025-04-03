@@ -1,0 +1,24 @@
+Zad 1-3
+Po dodaniu do metody wykonajPrzeglad metody sprawdzenie klimatyzacji wykonuje się cały przegląd i dopiero po zakończeniu przegladu wykonuje sie przeglad klimatyzacji. Aby prawidlowo wyswietlala sie kolejnosc nalezy w metodzie wykonajPrzeglad w klasie przeglad dodac haczyk w postaci metody dodatkowy, ktory w tej klasie jest pusty a metoda ta jest dodana do wykonajPrzeglad przed zakonczeniem przegladu. Nastepnie metode dodatkowe nadpisujemy w klasie przeglad klimatyzacji.
+Aby dodać możliwość wymiany świec dodano nową klas, która dziedziczy po klasie Przegląd. W tej klasie nadpisujemy metodę dodatkowe poprzez dodanie do niej wymianę świec. Niestety ta metoda ogranicza możliwość dodania tylko jednego dodtakowego przeglądu, chyba, że utworzymy kolejne klasy, które bedą w sobie posiadać dodatkowe metody, tylko dodanie kolejnej czynności w ramach przeglądu, zmusza nas do stworzenia kolejnej, dużej ilości grup.
+
+Zad 4
+Zastosowanie wzorca Dekorator polega na stworzeniu interfejsu, ktory jest intefejsem wyjsciowym dla wszystkich metod przedladu. Tworzymy klase przeglad bazowy, ktora jest klasa matką i musi tą klasę zawierać każda implementacja tworzonego nowego obiektu w klasie głównej Klient. Konieczne jest rowniez rozdzielenie metod rozpocznij i zakończ przeglad, której działanie jest opisane w klasie PrzegladBazowy i są przekazywane z innych klas do klasy PrzegladBazowy. Dzięki zastosowaniu tygo wzorca można opakować w jednym produkcie/przeglądzie wiele implementacji jednej metody w dowolnej kolejności, jednak nie można zapomnieć w każdym przeglądzie o PrzeglądzieBazowym.
+
+Zad 5.
+Zastosowanie wzorca Strategia polega na stworzeniu klasy Przeglag, która będzie zawierać w sobie już wszystkie dodatkowe zabiegi/przeglady/metody, które możemy chcieć wykorzystać w podczas wywoływania metody wykonajPrzegląd. Następnie należy stworzyć te metody w klasie Przegląd oraz odpowiednie interfejsy dla planowanych dodatkowych metod. Następnie tworzomy implementacje danych iterfejsow poprzez stworzenie odpowiednich klas, które mogą być różnymi wersjami danego dodatkowego zabiegu/metody. 
+
+Zad 6.
+Metoda wzorca Template Method nie nadaje się w tym przypadku, przy rozszerzaniu aplikacji wymaga tworzenia dużej ilości grup dziedziczących.
+Metoda Dekorator jest najlaptwiejsza w obsludze i rozzerzaniu aplikacji, jednak może przyspożyć problemy użytkownikowi, nauka tego programu jest najbardziej czasochłonna.
+Metoda Strategia pozwala uzyskać aplikację w łatwej obsłudze przez użytkowników, dodawanie nowych wersji istniejących metod jest proste, jednak dodanie nowej funkcjnalności wymaga dodania nowego interfejsu i utworzenia nowych klas implementujących ten interfejs, dodatkowo nie można zapomnieć o stworzeniu metody w klasie głównej.
+
+Zad 2.1
+Należy zastosować wzorzec Dekoratora, który umożliwia łatwe rozszerzanie i dodawania nowych statystyk.
+
+Zad 2.2
+Należy zastosować wzorzec Strategia, który początkowo będzie posiadał wszystkie języki na które będziemy chcieli tłumaczyć tekst.
+
+Zad 2.3
+Należy zastosować wzorzec Template Method, która umożliwi stworzenie wzorca z pewnymi założeniami i jedynie wpiąć metodę/warunek, który może się zależnie od zastosowanego sposobu w przyszłości.
+

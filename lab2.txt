@@ -1,0 +1,6 @@
+1. W klasie Liczydlo zmieniamy konstruktor na prywatny oraz tworzymy nową metodę publiczna statyczna, która tworzy nowy obiekt Liczydlo  i go zwraca. 
+2. Tworzymy Singleton - prywatna statyczną Instancje, która jest obiektem klasy Liczydlo i następnie metodę wywołującą getInstance, która zwraca obiekt Instancja. Całe tworzenie obiektu odbywa się tylko w klasie Liczydlo.
+
+3. Wprowadzamy flage (obiekt klasy Boolean), który przy tworzeniu obiektu zmienia się na false (niedostepny) i zmienia się z powrotem na true (dostepny) w momencie wykonania metody wynik (wprowadzono zmianę flagi na true w tej metodzie)
+
+4. Wprowadzono listę oraz przypisano na tą listę trzy nowe obiekty klasy obiekt, w momencie wywolania metody getInstance obiekt jest wywoływany i usuwany z listy, aby go ponownie wprowadzić należy w metodzie wynik należy z powrotem dodać ten obiekt do listy poprzez słowo kluczowe this.  
